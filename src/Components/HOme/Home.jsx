@@ -8,19 +8,23 @@ const Home = () => {
     const navigate = useNavigate();
 
     const btntogle = () => {
+        console.log('btnclicked')
         navigate('/addnew')
     }
 
     return (
         <div>
-            <Banner></Banner> 
+            <Banner></Banner>
             <SubBanner></SubBanner>
-            <div className="grid justify-center mt-10">
-                <Button>Add New</Button>
+            <div className="mt-32 text-center text-[#331A15] gap-2">
+                <p className="">--- Sip & Savor ---</p>
+                <p className="text-4xl">Our Popular Products</p>
+                <div className="flex justify-center mt-5">
+                <Button onclick={btntogle}>Add New</Button>
+                </div>
             </div>
-
         </div>
-        
+
     );
 };
 

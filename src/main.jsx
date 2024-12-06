@@ -8,11 +8,13 @@ import {
 } from "react-router-dom";
 import Home from './Components/HOme/HOme.jsx';
 import Cproduct from './Components/Cproduct/Cproduct.jsx';
+import Error from './Components/Error/Error.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement:<Error></Error>,
     children :[
       {
         path:"/",
