@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './Components/HOme/HOme.jsx';
+import Cproduct from './Components/Cproduct/Cproduct.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,11 @@ const router = createBrowserRouter([
       {
         path:"/",
         element:<Home></Home>
-      }
+      },
+      {
+        path:"/addnew",
+        element:<Cproduct></Cproduct>
+      },
     ]
   },
 ]);

@@ -1,7 +1,8 @@
-
+import './header.css'
 const  Header =()=>{
-   return <div className="bg-[#392929] w-scree text-white p-2">
-            <p>Coffee</p>
+   return <div className="header">
+           <img src="/src/assets/images/more/logo1.png" className='bnrimg' alt="" />
+            <p className="text-white p-4 font-rancho text-2xl">Coffee Shop</p>
       </div>
 }
 

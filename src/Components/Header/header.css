@@ -1,0 +1,7 @@
+.bnrimg{
+   @apply w-10 h-10 
+}
+
+.header{
+  @apply     bg-[#392929] flex justify-center items-center content-center
+}
