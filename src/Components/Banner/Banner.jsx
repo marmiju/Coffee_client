@@ -13,7 +13,7 @@ const Banner = () => {
             It's coffee time - Sip & Savor - Relaxation in every sip! Get the nostalgia back!!
              Your companion of every moment!!! Enjoy the beautiful moments and make them memorable.
             </p>
-            <div className="flex justify-center"><Button>Explore More</Button></div>
+            <div className="flex justify-center" ><Button>Explore More</Button></div>
           </div>
         </div>
       </div>
