@@ -3,5 +3,5 @@
 }
 
 .header{
-  @apply     bg-[#392929] flex justify-center items-center content-center
+  @apply  bg-[#392929] flex justify-center items-center content-center 
 }
