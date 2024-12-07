@@ -33,6 +33,7 @@ const Cproduct = () => {
             
             return ;
         }  
+       
         fetch('http://localhost:5000/coffee',{
             method : 'POST',
             headers :{
@@ -50,6 +51,7 @@ const Cproduct = () => {
                 })
             }
         });
+        form.reset();
     
     };
     return (

@@ -2,6 +2,7 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Button from "../Button/Button";
 import SubBanner from "../SubBanner/SubBanner";
+import Coffee from "../Coffee/Coffee";
 
 const Home = () => {
 
@@ -25,10 +26,10 @@ const Home = () => {
                     <Button onclick={btntogle}>Add New</Button>
                 </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-96 md:w-[1000px] mx-auto gap-6 mt-10">
                 {
                     coffee.map(c => (
-                        <p key={c.id}>{c.name}</p> // Display coffee name, assuming "name" is a property
+                       <Coffee coffee={c}></Coffee>
                     ))
                 }
             </div>
