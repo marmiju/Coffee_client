@@ -9,6 +9,7 @@ import {
 import Home from './Components/HOme/HOme.jsx';
 import Cproduct from './Components/Cproduct/Cproduct.jsx';
 import Error from './Components/Error/Error.jsx';
+import Preview from './Components/Preview/Preview.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,12 @@ const router = createBrowserRouter([
         path:"/addnew",
         element:<Cproduct></Cproduct>
       },
+      {
+        path: "/coffee/:id",
+        loader: ({ params }) => fetch(`http://localhost:5000/coffee/${params.id}`),
+        element: <Preview></Preview>
+      }
+      
     ]
   },
 ]);
